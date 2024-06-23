@@ -7,14 +7,23 @@ body {
     margin: 0 auto;
     padding: 20px;
 }
+.header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.logo {
+    width: 60px;
+    height: auto;
+    margin-right: 20px;
+}
 h1 {
     color: #5480ac;
+    margin: 0;
 }
-
-a{
+a {
     color: aquamarine;
 }
-
-a:hover{
+a:hover {
     color: antiquewhite;
 }
