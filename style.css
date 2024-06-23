@@ -1,0 +1,20 @@
+body {
+    background-color: #333;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #d8d1d1;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+h1 {
+    color: #5480ac;
+}
+
+a{
+    color: aquamarine;
+}
+
+a:hover{
+    color: antiquewhite;
+}
