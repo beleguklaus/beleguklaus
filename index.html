@@ -1,35 +1,73 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="light">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>JavaBool Minecraft Server</title>
-    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <script>
+        function toggleDarkMode() {
+            document.documentElement.classList.toggle('dark');
+        }
+    </script>
 </head>
-<body>
-    <!-- <a href="https://map.javabool.com:48661/" target="_blank" rel="noopener noreferrer">JavaBool Live Map</a> -->
-    <img src="pictures/logo.png" alt="JavaBool Server Logo" class="logo">
-    <h1>Welcome to JavaBool Minecraft Server</h1>
-    <p>Server Address: mc.javabool.com</p>
-    <h2>About Our Server</h2>
-    <p>JavaBool is a friendly Minecraft community where players can explore, build, and have fun together.</p>
-    <h2>How to Connect</h2>
-    <ol>
-        <li>Open Minecraft</li>
-        <li>Go to Multiplayer</li>
-        <li>Click "Add Server"</li>
-        <li>Enter "Java Bool" as the server name</li>
-        <li>Enter "mc.javabool.com" as the server address</li>
-	    <li>If connecting from a Java Client, enter "48660" as server port</li>
-	    <li>If connecting from a Bedrock Client, enter "48659" as server port</li>
-        <li>Click "Done" and join the server!</li>
-    </ol>
-    <h2>Server Rules</h2>
-    <ul>
-        <li>Be respectful to all players</li>
-        <li>No griefing or stealing</li>
-        <li>Remember, Minty the Third is a Kappa</li>
-        <li>Have fun!</li>
-    </ul>
+<body class="bg-gray-200 dark:bg-gray-900 font-sans transition-colors duration-300">
+    <header class="bg-blue-600 dark:bg-blue-800 text-white p-4 shadow-md">
+        <div class="container mx-auto flex justify-between items-center">
+            <div class="flex-1 flex justify-center">
+                <img src="logo.png" alt="JavaBool Server Logo" class="w-16 h-16 rounded-full border-2 border-orange-400">
+            </div>
+        </div>
+    </header>
+
+    <main class="container mx-auto mt-8 px-4">
+        <section class="text-center mb-12">
+            <h1 class="text-4xl font-bold mb-4 text-black dark:text-white">Welcome to <span class="text-orange-500">JavaBool</span> Minecraft Server</h1>
+            <p class="text-xl bg-orange-400 dark:bg-orange-600 inline-block px-4 py-2 rounded-full text-white shadow-lg">Server Address: mc.javabool.com</p>
+        </section>
+
+        <section id="about" class="mb-12 bg-gray-300 dark:bg-gray-800 rounded-lg shadow-md p-6 border-l-4 border-orange-400">
+            <h2 class="text-2xl font-semibold mb-4 text-blue-700 dark:text-blue-400">About Our Server</h2>
+            <p class="text-black dark:text-white">JavaBool is a friendly Minecraft community where players can explore, build, and have fun together.</p>
+        </section>
+
+        <section id="connect" class="mb-12 bg-gray-300 dark:bg-gray-800 rounded-lg shadow-md p-6 border-l-4 border-orange-400">
+            <h2 class="text-2xl font-semibold mb-4 text-blue-700 dark:text-blue-400">How to Connect</h2>
+            <ol class="list-decimal list-inside space-y-2 text-black dark:text-white">
+                <li>Open Minecraft</li>
+                <li>Go to Multiplayer</li>
+                <li>Click "Add Server"</li>
+                <li>Enter "Java Bool" as the server name</li>
+                <li>Enter "mc.javabool.com" as the server address</li>
+                <li>If connecting from a Java Client, use "48660" as server port</li>
+                <li>If connecting from a Bedrock Client, use "48659" as server port</li>
+                <li>Click "Done" and join the server!</li>
+            </ol>
+        </section>
+
+        <section id="rules" class="mb-12 bg-gray-300 dark:bg-gray-800 rounded-lg shadow-md p-6 border-l-4 border-orange-400">
+            <h2 class="text-2xl font-semibold mb-4 text-blue-700 dark:text-blue-400">Server Rules</h2>
+            <ul class="list-disc list-inside space-y-2 text-black dark:text-white">
+                <li>Be respectful to all players</li>
+                <li>No griefing or stealing</li>
+                <li>Remember, Minty the Third is a Kappa</li>
+                <li>Have fun!</li>
+            </ul>
+        </section>
+
+        <div class="text-center">
+            <a href="#" class="inline-flex items-center bg-orange-500 hover:bg-orange-600 text-white font-bold py-2 px-6 rounded-full transition-colors duration-200">
+                <span class="mr-2">Join Our Community</span>
+                <img src="https://static.vecteezy.com/system/resources/previews/018/930/718/original/discord-logo-discord-icon-transparent-free-png.png" alt="Discord Logo" class="w-10 h-10 inline-block">
+            </a>
+        </div>
+    </main>
+
+    <footer class="bg-blue-600 dark:bg-blue-800 text-white p-4 mt-8">
+        <div class="container mx-auto text-center">
+            <p>&copy; 2024 JavaBool Minecraft Server. All rights reserved.</p>
+        </div>
+    </footer>
 </body>
 </html>
