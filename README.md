@@ -1,1 +1,1 @@
- 👋 Hi, This is the JavaBool.
+ hi
